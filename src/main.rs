@@ -76,7 +76,7 @@ fn main() {
         None => println!("Invalid day, or I've not written a solution for that one yet!"),
         Some(solve) => {
             let (p1,p2) = solve(input);
-            println!("Solved in {:.}ms", (curr.elapsed().as_nanos() as f64 )/1000000.0);
+            println!("Solved in {}ms", (curr.elapsed().as_nanos() as f64 )/1000000.0);
             println!("Part 1: {}\nPart 2: {}", p1, p2)
         }
     }
